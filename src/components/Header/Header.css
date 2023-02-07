@@ -1,5 +1,23 @@
 .header-header {
     height: 83px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: black;
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #EDE0CD;
+}
+
+.header-menu {
+    display: flex;
+    text-transform: uppercase;
+}
+.header-menu>div {
+    padding: 0 15px;
+}
+.header-adress {
+    display: flex;
+    align-items: center;
 }
