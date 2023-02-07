@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  /* font-family: 'Beau Rivage', cursive; */
+  font-size: 128px;
+}
+body {
+  margin: 0;
+}
+
+.montserrat {
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+.Narrow {
+  font-family: 'PT Sans Narrow';
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.montaga {
+  font-family: 'Montaga';
+  font-size: 16px;
+}
+.Beau {
+  font-family: 'Beau Rivage', cursive;
+  font-size: 128px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
