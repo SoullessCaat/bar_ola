@@ -1,5 +1,33 @@
+.event-wrapper {
+    width: 100%;
+    background-color: rgb(43, 40, 40);
+}
+
+.event-event-wrapper {
+    width: 100%;
+}
+
 .event-event {
     height: 720px;
-    width: 100%;
-    background-color: firebrick;
+    max-width: 864px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+}
+
+.event-cards-wrapper {
+    display: flex;
+    margin-top: 25px;
+}
+
+.events-arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.events-arrow-left {
+    margin-right: 6px;
 }

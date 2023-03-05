@@ -1,13 +1,20 @@
-.header-header {
-    height: 83px;
+.header-wrapper {
     width: 100%;
     background-color: black;
+}
+
+.header-header {
+    max-width: 864px;
+    width: 100%;
+    margin: auto;
+    height: 83px;
     display: flex;
-    justify-content:  space-evenly;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Montserrat';
     font-size: 16px;
     color: #EDE0CD;
+    font-weight: 400;
 }
 
 .header-menu {
@@ -15,9 +22,15 @@
     text-transform: uppercase;
 }
 .header-menu>div {
-    padding: 0 15px;
+    padding: 0 15px 0 0;
+    cursor: pointer;
 }
 .header-adress {
     display: flex;
     align-items: center;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: 600;
 }

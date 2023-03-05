@@ -1,5 +1,42 @@
-.menu-menu {
-    height: 832px;
+.menu-wrapper {
     width: 100%;
     background-color: coral;
+}
+
+.menu-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 832px;
+    max-width: 864px;
+    margin: auto;
+}
+
+.menu-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.description_wrapper {
+    display: flex;
+    max-width: 864px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+.menu_names {
+    display: flex;
+}
+
+.menu_names>div {
+    padding-right: 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-transform: uppercase;
 }

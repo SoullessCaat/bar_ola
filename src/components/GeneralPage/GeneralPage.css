@@ -1,35 +1,44 @@
 .general-general {
+    max-width: 864px;
+    margin: auto;
     height: 749px;
-    width: 100%;
-    background-color: black;
-    border-top: 1px solid #E4D8CECC;
-    border-bottom: 1px solid #E4D8CECC;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: #E4D8CECC;
 }
 
 .general-general>div {
-    margin: 0 21px;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat';
     font-size: 16px;
     align-items: center
 }
+
 .general-description {
     max-width: 497px;
 }
+
+.general-general-wrapper {
+    background-color: rgb(118, 110, 110);
+    border-top: 1px solid #E4D8CECC;
+    border-bottom: 1px solid #E4D8CECC;
+    width: 100%;
+
+}
+
 .general-buttons {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
+
 .general-bar-description>div {
-    margin: 0 0 15px;
+    margin: 0 0 40px;
 }
-.general-buttons>div{
+
+.general-buttons>div {
     border-style: solid;
     border-width: 1px;
     height: 60px;
@@ -40,7 +49,23 @@
     justify-content: center;
     background: rgba(41, 40, 40, 0.95);
     color: rgba(224, 112, 134, 1);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
+
+.general-buttons>div:hover {
+    text-shadow: 0px 0px 17px rgba(255, 255, 255, 0.67);
+}
+
+.general-buttons>div:active {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
+}
+
 .general-buttons>:first-child {
     border-image: linear-gradient(180deg, #D28596 0%, #C16C7D 100%) 1;
     background: #D66B80;

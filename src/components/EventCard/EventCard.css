@@ -1,0 +1,42 @@
+.event-card {
+    width: 250px;
+    height: 360px;
+    margin-right: 6px;
+    background: rgba(16, 15, 15, 0.8);
+    box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(3.5px);
+}
+
+.event-card-description {
+    margin: 10px 15px;
+}
+
+.event-card-description-header {
+    display: flex;
+    font-family: 'Montaga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #D66B80;
+    margin-bottom: 5px;
+}
+
+.event-card-description-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-variant: small-caps;
+    color: rgba(228, 216, 206, 0.8);
+    text-align: start;
+}
+
+.event-card-arrow {
+    width: 100px;
+    height: 0.5px;
+    background-color: rgba(214, 107, 128, 1);
+    bottom: -28px;
+    position: relative;
+}

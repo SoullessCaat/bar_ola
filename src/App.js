@@ -11,25 +11,13 @@ import MenuPage from './components/MenuPage';
 function App() {
   return (
     <div className="App">
-    <Header />
-    <GeneralPage />
-    <AboutBarPage />
-    <MenuPage />
-    <EventPage />
-    <ContactPage />
-    <Footer />
-        <div className="montserrat">
-        КУХНЯ РАБОТАЕТ: ПН-СБ
-    </div>
-    <div className="Narrow">
-    о баре
-    </div>
-    <div className="montaga">
-    Working Hourse
-    </div>
-    <div className="Beau">
-    01
-    </div>
+      <Header />
+      <GeneralPage />
+      <AboutBarPage />
+      <MenuPage />
+      <EventPage />
+      <ContactPage />
+      <Footer />
     </div>
   );
 }

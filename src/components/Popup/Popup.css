@@ -1,0 +1,90 @@
+.popup-book-wrapper {
+    z-index: 99999;
+    width: 508px;
+    height: 275px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(228, 217, 207, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: rgba(51, 51, 51, 1);
+    font-family: "Montserrat";
+}
+
+.popup-place-wrapper {
+    z-index: 99999;
+    width: 508px;
+    height: 385px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(228, 217, 207, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: rgba(51, 51, 51, 1);
+    font-family: "Montserrat";
+}
+
+.popup-book {
+    margin: 35px 40px;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.popup-header-text {
+    max-width: 600px;
+    width: 100%;
+}
+
+.popup-descriprion {
+    margin-bottom: 15px;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-phone-number {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.popup-content-number>* {
+    margin-right: 15px;
+}
+
+.popup-content-number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popup-content-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.popup-photo {
+    display: flex;
+    justify-content: space-between;
+}
