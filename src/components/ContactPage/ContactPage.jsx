@@ -37,7 +37,7 @@ const ContactPage = () => {
   
 
   return (
-    <div className="contact-wrapper">
+    <div className="contact-wrapper" id="contacts">
       <div className="contact-contact">
         <div className="contacts-wrapper">
           <div className="contacts-first">

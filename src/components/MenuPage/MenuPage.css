@@ -1,6 +1,7 @@
 .menu-wrapper {
     width: 100%;
-    background-color: coral;
+    background-image: url(../../photo/backgroundMenu.png);
+    background-size: 100%;
 }
 
 .menu-menu {
@@ -17,6 +18,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    overflow: scroll;
 }
 
 .description_wrapper {

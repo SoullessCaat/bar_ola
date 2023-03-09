@@ -1,7 +1,7 @@
 import React from "react";
 import "./MenuCard.css";
 
-const MenuCard = ({position}) => {
+const MenuCard = ({ position }) => {
   const menuCocktails = {
     1: {
       name: "Something food",
@@ -85,10 +85,14 @@ const MenuCard = ({position}) => {
 
   const renderContent = () => {
     if (position === "kitchen") {
-      return renderPposotions(menuKitchen)
+      return renderPposotions(menuKitchen);
     }
-    position === "cocktails" && renderPposotions(menuCocktails);
-    position === "somethings" &&  renderPposotions(menuSomething);
+    if (position === "cocktails") {
+      return renderPposotions(menuCocktails);
+    }
+    if (position === "somethings") {
+      return renderPposotions(menuSomething);
+    }
   };
 
   return <div className="menu_card">{renderContent(position)}</div>;

@@ -21,11 +21,9 @@
 }
 
 .general-general-wrapper {
-    background-color: rgb(118, 110, 110);
-    border-top: 1px solid #E4D8CECC;
-    border-bottom: 1px solid #E4D8CECC;
+    background-image: url(../../photo/backgroundGeneral.png);
     width: 100%;
-
+    background-size: 100%;
 }
 
 .general-buttons {

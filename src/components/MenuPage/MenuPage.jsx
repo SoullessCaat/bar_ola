@@ -7,7 +7,7 @@ const MenuPage = () => {
   // Сделать функцию, которая будет принимать позиции по 5 штук с описанием каждой позиции.
   // Если 5 закончилось, то следующая карточка со следующим номером и также 5 позиций
   return (
-    <div className="menu-wrapper">
+    <div className="menu-wrapper" id="menu">
       <div className="menu-menu">
         <div className="description_wrapper">
           <div className="pages-number">02</div>
@@ -20,6 +20,11 @@ const MenuPage = () => {
         </div>
         <div className="menu-cards">
           <MenuCard position="cocktails" />
+          <MenuCard position="kitchen" />
+          <MenuCard position="kitchen" />
+          <MenuCard position="kitchen" />
+          <MenuCard position="kitchen" />
+          <MenuCard position="kitchen" />
           <MenuCard position="kitchen" />
           <MenuCard position="kitchen" />
         </div>

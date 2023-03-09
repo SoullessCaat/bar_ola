@@ -1,6 +1,7 @@
 .event-wrapper {
     width: 100%;
-    background-color: rgb(43, 40, 40);
+    background-image: url(../../photo/backgroundEvents.png);
+    background-size: 100%;
 }
 
 .event-event-wrapper {
@@ -20,12 +21,20 @@
 .event-cards-wrapper {
     display: flex;
     margin-top: 25px;
+    overflow: scroll;
 }
+
+.event-cards-wrapper::-webkit-scrollbar {
+    display: none;
+  }
 
 .events-arrows {
     display: flex;
     justify-content: flex-end;
     margin-top: 24px;
+}
+.events-arrows>div {
+    cursor: pointer;
 }
 
 .events-arrow-left {

@@ -10,6 +10,8 @@ const Header = () => {
         elementUnderline?.classList?.remove("underline");
         const element = e.target;
         element.classList.add("underline");
+        const page = document.getElementById(anchor);
+        page.scrollIntoView({behavior: "smooth"});
     }
 
     return (
@@ -17,7 +19,7 @@ const Header = () => {
         <div className="header-header">
             <div className="header-menu">
                 <div onClick={(e) => handleClick(e, "general")}>главная</div>
-                <div onClick={(e) => handleClick(e, "abouBar")}>о баре</div>
+                <div onClick={(e) => handleClick(e, "about-ola")}>о баре</div>
                 <div onClick={(e) => handleClick(e, "menu")}>Меню</div>
                 <div onClick={(e) => handleClick(e, "events")}>События</div>
                 <div onClick={(e) => handleClick(e, "contacts")}>контакты</div>

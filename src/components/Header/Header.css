@@ -1,6 +1,7 @@
 .header-wrapper {
+    background-image: url(../../photo/backgroundHeader.png);
     width: 100%;
-    background-color: black;
+    background-size: 100%;
 }
 
 .header-header {
