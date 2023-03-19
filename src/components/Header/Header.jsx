@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.css"
-import PinAltFill from "../../logo/PinAltFill.png"
+import PinAltFill from "../../logo/PinAltFill.png";
+import MenuLogo from "../../logo/Menu.png";
+
 
 const Header = () => {
 
@@ -17,6 +19,7 @@ const Header = () => {
     return (
         <div className="header-wrapper">
         <div className="header-header">
+            <div className="header-menu-mobil"><img src={MenuLogo} alt="" /></div>
             <div className="header-menu">
                 <div onClick={(e) => handleClick(e, "general")}>главная</div>
                 <div onClick={(e) => handleClick(e, "about-ola")}>о баре</div>

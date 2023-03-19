@@ -17,8 +17,7 @@
 .menu-cards {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .description_wrapper {

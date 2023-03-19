@@ -41,6 +41,9 @@ const AboutBarPage = () => {
           <div className="page-descriptions-text">
           Раз в неделю бар превращается в импровизированный культурный центр, а в остальные дни остаётся уютным домом миксологии и царством коктейлей!
           </div>
+          <div className="about-photo-mobil">
+            <img src={generalPhoto} width={282} height={292} alt="" onClick={(e) => changePhoto(e)}></img>
+          </div>
           <div className="about-about-description-gallery">
             <img src={photoOne} width={136} height={146} alt="" onClick={(e) => changePhoto(e)}  className="hide"></img>
             <img src={photoTwo} width={136} height={146} alt="" onClick={(e) => changePhoto(e)}></img>

@@ -21,7 +21,7 @@
 .event-cards-wrapper {
     display: flex;
     margin-top: 25px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .event-cards-wrapper::-webkit-scrollbar {

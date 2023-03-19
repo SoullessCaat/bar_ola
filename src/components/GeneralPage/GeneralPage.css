@@ -1,3 +1,10 @@
+
+.general-general-wrapper {
+    background-image: url(../../photo/backgroundGeneral.png);
+    width: 100%;
+    background-size: cover;
+}
+
 .general-general {
     max-width: 864px;
     margin: auto;
@@ -20,11 +27,6 @@
     max-width: 497px;
 }
 
-.general-general-wrapper {
-    background-image: url(../../photo/backgroundGeneral.png);
-    width: 100%;
-    background-size: 100%;
-}
 
 .general-buttons {
     display: flex;
@@ -68,4 +70,29 @@
     border-image: linear-gradient(180deg, #D28596 0%, #C16C7D 100%) 1;
     background: #D66B80;
     color: rgba(51, 51, 51, 1);
+}
+
+@media (max-width: 900px) {
+    .general-horse {
+        display: none!important;
+    }   
+    .general-general {
+        justify-content: center;
+    }
+    .general-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .general-buttons>div {
+        margin-bottom: 15px!important;
+        width: 230px;
+    }
+    .general-description {
+        max-width: 290px;
+    }
+    .general-logo {
+        width: 204px!important;
+        height: 127px!important;
+    }
 }

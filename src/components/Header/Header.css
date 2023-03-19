@@ -1,14 +1,14 @@
 .header-wrapper {
     background-image: url(../../photo/backgroundHeader.png);
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .header-header {
     max-width: 864px;
     width: 100%;
-    margin: auto;
     height: 83px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +17,7 @@
     color: #EDE0CD;
     font-weight: 400;
 }
+
 
 .header-menu {
     display: flex;
@@ -29,9 +30,28 @@
 .header-adress {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .underline {
     text-decoration: underline;
     font-weight: 600;
+}
+.header-menu-mobil {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .header-header {
+        min-width: 290px;
+        margin: 0 12px;
+        width: auto;
+    }
+    .header-menu>div {
+        display: none;
+    }
+    .header-menu-mobil {
+        display: block;
+    }
 }

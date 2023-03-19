@@ -2,7 +2,7 @@
     width: 100%;
     background-image: url(../../photo/backgroundAboutBar.png);
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .about-about {
@@ -71,4 +71,22 @@
 
 .page-descriptions-text {
     text-align: start;
+}
+.about-photo-mobil {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .about-about-big-gallery {
+        display: none;
+    }
+    .about-about-description-gallery {
+        display: none;
+    }
+    .about-about {
+        max-width: 290px;
+    }
+    .about-photo-mobil {
+        display: block;
+    }
 }

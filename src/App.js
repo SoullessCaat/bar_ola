@@ -13,11 +13,11 @@ function App() {
     <div className="App">
       <Header />
       <GeneralPage />
-      <AboutBarPage />
-      <MenuPage />
+      <AboutBarPage /> 
+      {/* <MenuPage />
       <EventPage />
       <ContactPage />
-      <Footer />
+      <Footer />  */}
     </div>
   );
 }
