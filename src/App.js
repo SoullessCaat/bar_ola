@@ -14,10 +14,10 @@ function App() {
       <Header />
       <GeneralPage />
       <AboutBarPage /> 
-      {/* <MenuPage />
+      <MenuPage />
       <EventPage />
       <ContactPage />
-      <Footer />  */}
+      <Footer /> 
     </div>
   );
 }

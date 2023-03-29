@@ -40,6 +40,9 @@
 .header-menu-mobil {
     display: none;
 }
+.header-current-adress {
+    max-width: 275px;
+}
 
 
 @media (max-width: 900px) {

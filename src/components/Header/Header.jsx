@@ -28,7 +28,7 @@ const Header = () => {
                 <div onClick={(e) => handleClick(e, "contacts")}>контакты</div>
             </div>
             <div className="header-adress" onClick={(e) => handleClick(e, "contacts")}>
-                <div>СПБ, ул. Каштановая аллея, дом 2</div>
+                <div className="header-current-adress">Санкт-Петербург, набережная реки Фонтанки, 51/53</div>
                 <img src={PinAltFill} alt="" width={36} height={36}></img>
             </div>
         </div>

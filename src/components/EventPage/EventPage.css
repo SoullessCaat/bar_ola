@@ -6,6 +6,7 @@
 
 .event-event-wrapper {
     width: 100%;
+    margin: auto;
 }
 
 .event-event {
@@ -39,4 +40,11 @@
 
 .events-arrow-left {
     margin-right: 6px;
+}
+
+@media (max-width: 900px) {
+    .event-event-wrapper {
+        max-width: 290px;
+        padding: 0 15px;
+    }
 }

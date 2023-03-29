@@ -66,10 +66,13 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    text-decoration: none;
+    color: ;
 }
 
 .popup-content-number>* {
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .popup-content-number {
@@ -87,4 +90,11 @@
 .popup-photo {
     display: flex;
     justify-content: space-between;
+}
+
+:hover {
+
+}
+:active {
+
 }

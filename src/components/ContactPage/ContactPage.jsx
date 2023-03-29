@@ -44,16 +44,16 @@ const ContactPage = () => {
             <div className="contacts-header">Contacts</div>
             <div>
               <img src={Pin_alt} alt="" width={24} height={24}></img>
-              &nbsp;&nbsp;5,Невский пр, г. Спб
+              &nbsp;&nbsp;Санкт-Петербург, набережная реки Фонтанки, 51/53
             </div>
             <div>
               <img src={Phone_light} alt="" width={24} height={24}></img>
-              &nbsp;&nbsp;+7 (872) 456-45-32
+              &nbsp;&nbsp;<a href="tel:+79810045424">+7 (981) 004-54-24</a>
             </div>
             <div>
-              <img src={telegram} alt="" width={35} height={35}></img>
-              <img src={whatsapp} alt="" width={35} height={35}></img>
-              <img src={instagram} alt="" width={35} height={35}></img>
+              <img src={telegram} alt="" width={35} height={35} onClick={() => window.open("tg://resolve?domain=79810045424")}></img>
+              <img src={whatsapp} alt="" width={35} height={35} onClick={() => window.open("https://api.whatsapp.com/send?phone=79810045424")}></img>
+              <img src={instagram} alt="" width={35} height={35} onClick={() => window.open("https://instagram.com/olabar.spb")}></img>
             </div>
           </div>
           <button className="contacts-buttons-book" onClick={() => handleViewBookPopup(true)}>
