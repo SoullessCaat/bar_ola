@@ -1,50 +1,50 @@
 .event-wrapper {
-    width: 100%;
-    background-image: url(../../photo/backgroundEvents.png);
-    background-size: 100%;
+  width: 100%;
+  background-image: url(../../photo/backgroundEvents.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .event-event-wrapper {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .event-event {
-    height: 720px;
-    max-width: 864px;
-    margin: auto;
-    display: flex;
-    justify-content: start;
-    text-align: start;
-    align-items: center;
+  height: 720px;
+  max-width: 864px;
+  margin: auto;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  align-items: center;
 }
 
 .event-cards-wrapper {
-    display: flex;
-    margin-top: 25px;
-    overflow: hidden;
+  display: flex;
+  margin-top: 25px;
+  overflow: hidden;
 }
 
 .event-cards-wrapper::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .events-arrows {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
 }
-.events-arrows>div {
-    cursor: pointer;
+.events-arrows > div {
+  cursor: pointer;
 }
 
 .events-arrow-left {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 @media (max-width: 900px) {
-    .event-event-wrapper {
-        max-width: 290px;
-        padding: 0 15px;
-    }
+  .event-event {
+    padding: 0 20px;
+  }
 }

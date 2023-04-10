@@ -4,7 +4,7 @@
     border: 1px solid rgba(47, 42, 47, 0.63);
     margin-right: 10px;
     background-color: black;
-
+    overflow-y: scroll;
 }
 .card {
     background-color: black;
@@ -12,9 +12,7 @@
     width: 241px;
     min-height: 27.13px;
     margin: 0 18px 15px 21px;
-    
     display: flex;
-    
     align-items: flex-start;
     /* background: ${{props} => }; */
 }
@@ -27,7 +25,8 @@
     line-height: 17.25px;
 }
 .menu-name-wrapper {
-    width: 194px;
+    width: 100%;
+    max-width: 194px;
     text-align: start;
     color: rgba(228, 216, 206, 0.8);
     font-family: 'Montserrat';
@@ -50,4 +49,14 @@
 
 .menu-price {
     margin-left: 11px;
+}
+
+.sub {
+    flex-direction: column;
+}
+
+.wrapper-submenu {
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
 }

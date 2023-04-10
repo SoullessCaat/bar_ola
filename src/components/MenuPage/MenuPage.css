@@ -1,7 +1,8 @@
 .menu-wrapper {
     width: 100%;
     background-image: url(../../photo/backgroundMenu.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .menu-menu {
@@ -31,6 +32,7 @@
 
 .menu_names {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menu_names>div {
@@ -40,4 +42,82 @@
     line-height: 20px;
     align-items: center;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-arrows {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-arrow-left {
+    width: 176px;
+    height: 40px;
+    background-color: #282727;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.menu-arrow-right {
+    width: 176px;
+    height: 40px;
+    background-color: #D66B80;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-arrow-left:hover {
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.67);
+}
+
+.menu-arrow-left:active {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.menu-arrow-right:hover {
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.67);
+}
+
+.menu-arrow-right:active {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.menu-navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.underline-menu {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #D66B80;
+}
+
+@media (max-width: 900px) {
+    .menu-navigation {
+        flex-direction: column-reverse;
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .menu-arrows {
+        margin: 25px 0;
+    }
+    .menu-menu {
+        margin: 20px 20px;
+    }
+    .menu-arrow-right {
+        width: 150px;
+    }
+    .menu-arrow-left {
+        width: 150px;
+        margin-right: 20px;
+    }
 }

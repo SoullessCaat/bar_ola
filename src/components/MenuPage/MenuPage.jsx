@@ -1,11 +1,34 @@
 import React from "react";
 import "./MenuPage.css";
 import MenuCard from "../MenuCard";
+import rightArrow from "../../logo/arrowRightMenu.svg";
+import leftArrow from "../../logo/arrowLeftMenu.svg";
 
 const MenuPage = () => {
-  // Карточка на которой будет в бэкграунден номер карточки. Сверху будет меню.
-  // Сделать функцию, которая будет принимать позиции по 5 штук с описанием каждой позиции.
-  // Если 5 закончилось, то следующая карточка со следующим номером и также 5 позиций
+  const handleScroll = (dir) => {
+    const cards = document.querySelector(".menu-cards");
+    if (dir === "right") {
+      return cards.scrollBy({
+        left: 297,
+        behavior: "smooth"
+      })
+    }
+    return cards.scrollBy({
+      left: -297,
+      behavior: "smooth"
+    })
+  }
+
+  const openMenuCard = (e, position) => {
+    e.preventDefault();
+    const elementUnderline = document.querySelector(".underline-menu");
+    elementUnderline?.classList?.remove("underline-menu");
+    const element = e.target;
+    element.classList.add("underline-menu");
+    const menuCard = document.getElementById(position);
+    menuCard.scrollIntoView({block: "nearest", inline: "center", behavior: "smooth"});
+  }
+
   return (
     <div className="menu-wrapper" id="menu">
       <div className="menu-menu">
@@ -13,14 +36,43 @@ const MenuPage = () => {
           <div className="pages-number">02</div>
           <div className="pages-description">меню</div>
           <div className="menu_names">
-            <div>коктейли</div>
-            <div>бутылки</div>
-            <div>закуски</div>
+            <div onClick={(e) => openMenuCard(e, "kitchen")} className="underline-menu">кухня</div>
+            <div onClick={(e) => openMenuCard(e, "cocktails")}>коктейли</div>
+            <div onClick={(e) => openMenuCard(e, "wine")}>Вино</div>
+            <div onClick={(e) => openMenuCard(e, "hard")}>крепкое</div>
+            <div onClick={(e) => openMenuCard(e, "beer")}>пиво/сидр</div>
+            <div onClick={(e) => openMenuCard(e, "bottles")}>бутылки</div>
           </div>
         </div>
         <div className="menu-cards">
-          <MenuCard position="kitchen" />
+          <MenuCard position="kitchen"/>
           <MenuCard position="cocktails" />
+          <MenuCard position="wine" />
+          <MenuCard position="hard" />
+          <MenuCard position="beer" />
+          <MenuCard position="bottles" />
+        </div>
+        <div className="menu-navigation">
+          <div>КУХНЯ РАБОТАЕТ: ПН&#8209;СБ&nbsp;12&#8209;10PM&nbsp;/&nbsp;ВС&nbsp;12PM&#8209;9:30PM</div>
+          <div className="menu-arrows">
+            <div className="menu-arrow-left" onClick={() => handleScroll("left")}>
+              <img
+                src={leftArrow}
+                alt=""
+                width="24"
+                height="24"
+              ></img>
+            </div>
+            <div className="menu-arrow-right" onClick={() => handleScroll("right")}>
+              <img 
+              src={rightArrow} 
+              alt=""
+              width="24"
+              height="24"
+              ></img>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

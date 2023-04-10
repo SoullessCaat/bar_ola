@@ -3,13 +3,14 @@
     width: 100%;
     background-image: url(../../photo/backgroundFooter.png);
     width: 100%;
-    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgba(60, 57, 53, 1);
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
 }
 
 .bar {

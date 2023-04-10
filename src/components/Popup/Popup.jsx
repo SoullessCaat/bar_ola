@@ -33,9 +33,9 @@ const Popup = ({ handleViewBookPopup, headerText, descriptionText, place, handle
             !place && 
               <div className="popup-content">
                 <div className="popup-content-number">
-                  <img src={telegramPopup} width={32} height={32} alt="" onClick={() => window.open("tg://resolve?domain=79810045424")}></img>
-                  <img src={whatsappPopup} width={32} height={32} alt="" onClick={() => window.open("https://api.whatsapp.com/send?phone=79810045424")} ></img>
-                  <span className="popup-phone-number"><a href="tel:+79810045424">+7 (981) 004-54-24</a></span>
+                  <img src={telegramPopup} className="popup-telegram" alt="" onClick={() => window.open("tg://resolve?domain=79810045424")}></img>
+                  <img src={whatsappPopup} className="popup-whatsapp" alt="" onClick={() => window.open("https://api.whatsapp.com/send?phone=79810045424")} ></img>
+                  <span ><a href="tel:+79810045424" className="popup-phone-number">+7 (981) 004-54-24</a></span>
                 </div>
                 <div className="popup-content-description">
                   *Бронирование столиков рекомендуется минимум за 3 часа до посещения
