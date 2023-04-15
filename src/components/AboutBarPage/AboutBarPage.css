@@ -7,7 +7,7 @@
 }
 
 .about-about {
-  max-width: 864px;
+  max-width: 867px;
   width: 100%;
   margin: auto;
   height: 832px;
@@ -37,7 +37,7 @@
   align-items: flex-start;
   max-height: 702px;
   height: 100%;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .about-about-description-gallery {
@@ -59,7 +59,7 @@
   margin-top: 10px;
 }
 .about-about-mini-gallery > img {
-  margin: 0 4px;
+  margin: 0 6px 0 0;
   cursor: pointer;
   filter: grayscale(100%);
 }

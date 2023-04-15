@@ -115,13 +115,13 @@ const ContactPage = () => {
           <div className="contacts-two">
             <div className="contacts-header">Working Hours</div>
             <div>
-              <span className="days">Пн-пт:&nbsp;</span>7.00am - 8.00pm
+              <span className="days">Ср-Чт:&nbsp;</span>18:00 - 01:00
             </div>
             <div>
-              <span className="days">Суб:&nbsp;</span>9.00am - 10.00pm
+              <span className="days">Пт-Сб:&nbsp;</span>17:00 - 03:00
             </div>
             <div>
-              <span className="days">Вс:&nbsp;</span>14.00am - 8.00pm
+              <span className="days">Вс:&nbsp;</span>17:00 - 01:00
             </div>
           </div>
           <div className="button-reserved-mob">{buttonReserved()}</div>

@@ -19,6 +19,8 @@
     display: flex;
     width: 100%;
     overflow: hidden;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 .description_wrapper {
@@ -90,7 +92,7 @@
 .menu-navigation {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
 }

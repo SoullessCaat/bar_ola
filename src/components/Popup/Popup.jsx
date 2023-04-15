@@ -9,11 +9,12 @@ import popupSecond from "../../photo/popupSecond.png";
 
 const Popup = ({ handleViewBookPopup, headerText, descriptionText, place, handleViewPlacePopup }) => {
   return (
+    <div className="pod">
     <div className={place ? "popup-place-wrapper" : "popup-book-wrapper"}>
       <div className="popup-book">
         <div className="popup-header">
           <span className="popup-header-text">{headerText}</span>
-          <div onClick={() => place ? handleViewPlacePopup(false) : handleViewBookPopup(false)}>
+          <div onClick={() => place ? handleViewPlacePopup(false) : handleViewBookPopup(false)} className="button-close">
             <img src={Dell_duotone} width={24} height={24} alt=""></img>
           </div>
         </div>
@@ -24,8 +25,8 @@ const Popup = ({ handleViewBookPopup, headerText, descriptionText, place, handle
             place && 
             <div className="popup-content">
               <div className="popup-photo">
-                <img src={popupFirst} width={205} height={205} alt=""></img>
-                <img src={popupSecond} width={205} height={205} alt=""></img>
+                <img src={popupFirst} width={253} height={205} alt=""></img>
+                <img src={popupSecond} width={253} height={205} alt=""></img>
               </div>
             </div>
           }
@@ -44,6 +45,7 @@ const Popup = ({ handleViewBookPopup, headerText, descriptionText, place, handle
               </div>
           }
       </div>
+    </div>
     </div>
   );
 };

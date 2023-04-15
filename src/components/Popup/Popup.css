@@ -1,130 +1,173 @@
 .popup-book-wrapper {
-    z-index: 99999;
-    min-width: 290px;
-    min-height: 275px;
-    background-color: aliceblue;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(228, 217, 207, 0.7);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    color: rgba(51, 51, 51, 1);
-    font-family: "Montserrat";
+  z-index: 99999;
+  min-width: 290px;
+  max-width: 508px;
+  min-height: 275px;
+  background-color: aliceblue;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(228, 217, 207, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "Montserrat";
+  border: 1px solid rgba(220, 216, 213, 1);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.53);
+  overflow: scroll;
 }
 
 .popup-place-wrapper {
-    z-index: 99999;
-    max-width: 508px;
-    height: 385px;
-    background-color: aliceblue;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(228, 217, 207, 0.7);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    color: rgba(51, 51, 51, 1);
-    font-family: "Montserrat";
+  z-index: 99999;
+  max-width: 508px;
+  background-color: aliceblue;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: auto;
+  transform: translate(-50%, -50%);
+  background-color: rgba(228, 217, 207, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "Montserrat";
+  border: 1px solid rgba(47, 42, 47, 0.63);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.53);
+  overflow: scroll;
+}
+
+.button-close {
+  display: flex;
+  position: relative;
+  top: -20px;
+  left: 20px;
 }
 
 .popup-book {
-    margin: 35px 40px;
+  margin: 35px 40px;
+  min-width: 300px;
 }
 
 .popup-header {
-    display: flex;
-    justify-content: space-between;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .popup-header-text {
-    max-width: 600px;
-    width: 100%;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 24px;
 }
 
 .popup-descriprion {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .popup-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-phone-number {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-decoration: none;
-    color: rgba(51, 51, 51, 1);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
 }
 
-.popup-content-number>* {
-    margin-right: 15px;
-    cursor: pointer;
+.popup-content-number > * {
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .popup-content-number {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .popup-content-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .popup-photo {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+.popup-photo > img {
+  width: 205px;
 }
 
 .popup-telegram {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .popup-whatsapp {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
-
 @media (max-width: 900px) {
-    .popup-book {
-        margin: 35px 20px;
-        font-size: 14px;
-    }
-    .popup-telegram {
-        width: 24px;
-        height: 24px;
-    }
-    .popup-whatsapp {
-        width: 24px;
-        height: 24px;
-    }
-    .popup-phone-number {
-        font-size: 16px;
-        font-weight: 500;
-    }
-    .popup-header {
-        font-weight: 700;
-        margin-bottom: 15px;
-    }
-    .popup-content-description {
-        font-size: 12px;
-    }
+  .popup-book {
+    margin: 24px 24px;
+    font-size: 14px;
+  }
+  .popup-telegram {
+    width: 24px;
+    height: 24px;
+  }
+  .popup-whatsapp {
+    width: 24px;
+    height: 24px;
+  }
+  .popup-phone-number {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .popup-header {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .popup-content-description {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .popup-photo {
+    flex-direction: column;
+  }
+  .popup-content {
+    flex-wrap: wrap;
+  }
+  .popup-photo {
+    align-items: center;
+  }
+  .popup-photo > img {
+    width: 253px;
+    height: 166px;
+  }
+}
+
+.pod {
+  backdrop-filter: blur(5px);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
 }

@@ -2,19 +2,30 @@
     min-width: 283px;
     height: 435px;
     border: 1px solid rgba(47, 42, 47, 0.63);
-    margin-right: 10px;
-    background-color: black;
+    background: rgba(16, 15, 15, 0.8);
+    box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.53);
     overflow-y: scroll;
+    margin-right: 10px;
+    backdrop-filter: blur(3.5px);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.menu-card:-webkit-scrollbar {
+    width: 0;
+    height: 0;
+} 
+
 .card {
-    background-color: black;
+    background: rgba(16, 15, 15, 0.8);
     color: white;
     width: 241px;
     min-height: 27.13px;
     margin: 0 18px 15px 21px;
     display: flex;
     align-items: flex-start;
-    /* background: ${{props} => }; */
+    
 }
 
 .menu-name {

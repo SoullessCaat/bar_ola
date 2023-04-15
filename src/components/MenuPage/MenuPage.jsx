@@ -53,7 +53,6 @@ const MenuPage = () => {
           <MenuCard position="bottles" />
         </div>
         <div className="menu-navigation">
-          <div>КУХНЯ РАБОТАЕТ: ПН&#8209;СБ&nbsp;12&#8209;10PM&nbsp;/&nbsp;ВС&nbsp;12PM&#8209;9:30PM</div>
           <div className="menu-arrows">
             <div className="menu-arrow-left" onClick={() => handleScroll("left")}>
               <img

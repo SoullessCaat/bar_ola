@@ -23,7 +23,8 @@
 .event-cards-wrapper {
   display: flex;
   margin-top: 25px;
-  overflow: hidden;
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 .event-cards-wrapper::-webkit-scrollbar {
