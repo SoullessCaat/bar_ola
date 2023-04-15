@@ -1,7 +1,7 @@
 import React from "react";
 import "./MenuCard.css";
 import arrowBigRight from "../../logo/arrowBigRight.png";
-import menuList from "../../menu";
+import menuList from "../../data/menu";
 
 const MenuCard = ({ position }) => {
   const renderPositions = (menu) => {
