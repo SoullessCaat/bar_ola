@@ -8,7 +8,7 @@
 .general-general {
     max-width: 864px;
     margin: auto;
-    height: 749px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,8 +68,9 @@
 
 .general-buttons>:first-child {
     border-image: linear-gradient(180deg, #D28596 0%, #C16C7D 100%) 1;
-    background: #D66B80;
+    background:  rgba(155, 82, 96, 0.95);
     color: rgba(51, 51, 51, 1);
+    margin-right: 10px;
 }
 
 @media (max-width: 900px) {
@@ -78,11 +79,11 @@
     }   
     .general-general {
         justify-content: center;
+        height: 627px;
     }
     
     .general-buttons>div {
         margin-bottom: 15px!important;
-        margin-right: 10px;
         width: 230px;
     }
     .general-description {
@@ -97,5 +98,8 @@
     .general-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    .general-buttons>:first-child {
+        margin-right: 0;
     }
 }

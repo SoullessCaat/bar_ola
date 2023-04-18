@@ -5,6 +5,8 @@ import rightArrow from "../../logo/arrowRightMenu.svg";
 import leftArrow from "../../logo/arrowLeftMenu.svg";
 
 const MenuPage = () => {
+  // Нужно следить за скролом карточек. Каждая карточка 
+
   const handleScroll = (dir) => {
     const cards = document.querySelector(".menu-cards");
     if (dir === "right") {
@@ -41,7 +43,6 @@ const MenuPage = () => {
             <div onClick={(e) => openMenuCard(e, "wine")}>Вино</div>
             <div onClick={(e) => openMenuCard(e, "hard")}>крепкое</div>
             <div onClick={(e) => openMenuCard(e, "beer")}>пиво/сидр</div>
-            <div onClick={(e) => openMenuCard(e, "bottles")}>бутылки</div>
           </div>
         </div>
         <div className="menu-cards">
@@ -50,7 +51,6 @@ const MenuPage = () => {
           <MenuCard position="wine" />
           <MenuCard position="hard" />
           <MenuCard position="beer" />
-          <MenuCard position="bottles" />
         </div>
         <div className="menu-navigation">
           <div className="menu-arrows">

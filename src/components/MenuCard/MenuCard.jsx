@@ -46,7 +46,7 @@ const MenuCard = ({ position }) => {
   };
 
   const renderContent = () => {
-    if (position === "wine" || position === "hard" || position === "bottles" || position === "beer") {
+    if (position === "wine" || position === "hard" || position === "beer") {
       return renderSubPositions(menuList[position], position);
     }
     return renderPositions(menuList[position], position);
@@ -58,7 +58,6 @@ const MenuCard = ({ position }) => {
     if (position === "wine") return "Вино";
     if (position === "hard") return "Крепкое";
     if (position === "beer") return "Пиво/сидр";
-    if (position === "bottles") return "Бутылки";
   };
 
   return (

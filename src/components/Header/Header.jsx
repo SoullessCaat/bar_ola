@@ -14,7 +14,11 @@ const Header = () => {
         const element = e.target;
         element.classList.add("underline");
         const page = document.getElementById(anchor);
-        page.scrollIntoView({behavior: "smooth"});
+        if (anchor === "contacts") {
+            page.scrollIntoView({behavior: "smooth", block: "start" });
+        }
+        page.scrollIntoView({behavior: "smooth" });
+
         if (mob) {
             setOpenMenu(false)
         }

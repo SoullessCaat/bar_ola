@@ -80,7 +80,7 @@ const ContactPage = () => {
                 alt=""
                 width={35}
                 height={35}
-                onClick={() => window.open("tg://resolve?domain=79810045424")}
+                onClick={() => window.open("https://t.me/olabarspb")}
               ></img>
               <img
                 src={whatsapp}

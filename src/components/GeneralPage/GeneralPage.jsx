@@ -20,16 +20,6 @@ const GeneralPage = () => {
     return (document.body.style.overflow = "inherit");
   };
 
-  const buttonReserved = () => {
-    return (
-      <div
-        className="contacts-buttons-book"
-        onClick={() => handleViewBookPopup(true)}
-      >
-        Забронировать
-      </div>
-    );
-  };
   return (
     <div className="general-general-wrapper" id="general">
       <div className="general-general">
@@ -58,7 +48,7 @@ const GeneralPage = () => {
             />
           )}
           <div className="general-buttons">
-            <div>{buttonReserved()}</div>
+            <div onClick={() => handleViewBookPopup(true)}>Забронировать</div>
             <div onClick={() => handleSroll("menu")}>Посмотреть меню</div>
           </div>
         </div>

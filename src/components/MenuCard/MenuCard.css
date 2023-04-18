@@ -60,6 +60,7 @@
 
 .menu-price {
     margin-left: 11px;
+    color: rgba(228, 216, 206, 1);
 }
 
 .sub {
@@ -70,4 +71,8 @@
     display: flex;
     margin: 10px 0;
     width: 100%;
+}
+
+.menu-name-submenu {
+    color: rgba(228, 216, 206, 1);
 }

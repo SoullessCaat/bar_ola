@@ -1,89 +1,109 @@
 const menuList = {
     kitchen: {
         1: {
-            name: "пряные оливки",
+            name: "Домашние оливки",
             price: 450,
         },
         2: {
-            name: "французский козий сыр / грушевый соус",
-            price: 500,
+            name: "Пряные томаты с горьким шоколадом и кинзой",
+            price: 450,
         },
         3: {
-            name: "маринованные черри / крем Маракуйя",
-            price: 500,
+            name: "Севиче из тунца с клубничным пюре",
+            price: 650,
         },
         4: {
-            name: "ростбиф из утки / соус Сливочный чили / соус Бри",
-            price: 600,
+            name: "Ассорти из трёх сыров",
+            price: 650,
         },
         5: {
-            name: "севиче из тунца / азиатский дрессинг",
-            price: 700,
+            name: "Утиная грудка со сливочным чили",
+            price: 550,
         },
         6: {
-            name: "жареные креветки / сливочно- кокосовый мусс / соус Курозу / чиабатта",
-            price: 700,
+            name: "Креветки с битым ананасом на кокосовой подушке",
+            price: 650,
         },
         7: {
-            name: "утиный паштет / белый шоколад / варенье из красной смородины / чиабатта",
-            price: 700,
+            name: "Утиные бале с соленым арахисом",
+            price: 450,
         },
     },
     cocktails: {
         1: {
-            name: "Toffee",
+            name: "Блэк Си",
             price: 600,
-            description: "ром, эстрагон, фейхоа, слива, миндаль"
+            description: "водка, груша, белое вино, фейхоа"
         },
         2: {
-            name: "Sunset Punch",
+            name: "Озеро Цветов",
             price: 600,
-            description: "ром, миндаль, клубника, земляника"
+            description: "джин, листья лайма, черемуха, белое вино, кокос"
         },
         3: {
-            name: "Melon Fizz",
+            name: "Сицилийский Сауэр",
             price: 600,
-            description: "джин, бузина, дыня, виноград"
+            description: "джин, красный апельсин, абрикос"
         },
         4: {
-            name: "Strawberry Americano",
+            name: "Азиатский Бисквит",
             price: 600,
-            description: "сладкий вермут, цитрусовый горький аперитив, земляничный аперитив, клубника, игристое"
+            description: "водка, пандан, фундук, маракуйя"
 
         },
         5: {
-            name: "Raspberry 75",
+            name: "Травяной Тоффи",
             price: 600,
-            description: "водка, малина, йогурт, игристое"
+            description: "ром, эстрагон, фейхоа, слива, миндаль"
         },
         6: {
-            name: "Walnut Porto Ronco",
+            name: "Сансет Панч",
             price: 600,
-            description: "ром, красное вино, орех, цветочный аперитив"
+            description: "ром, миндаль, клубника"
         },
         7: {
-            name: "Adonis 2.0",
+            name: "Барбара Физз",
+            price: 600,
+            description: "джин, бузина, дыня, барбарис, кардамон"
+        },
+        8: {
+            name: "Клубничный Американо",
+            price: 600,
+            description: "сладкий вермут, цитрусовый горький аперитив, земляничный аперитив, клубника"
+        },
+        9: {
+            name: "Малиновый 75",
+            price: 600,
+            description: "водка, малина, черная смородина, йогурт, игристое"
+        },
+        10: {
+            name: "Редондо Тини",
+            price: 600,
+            description: "белое вино, персик, грейпфрут, пер се, белая горечь"
+        },
+        11: {
+            name: "Адонис 2.0",
             price: 600,
             description: "сухой вермут, херес крим, херес ореанда, черная смородина, ферне"
         },
-        8: {
-            name: "pear Negroni",
+        12: {
+            name: "Грушевый Негрони",
             price: 600,
-            description: "джин, сухой вермут, белая горечь, груша"
+            description: "джин, сухой вермут, груша, горечь"
         },
     },
     wine: {
         white: {
             items: {
                 1: {
-                    name: "Currivu Bianco",
+                    name: "Pago Casa Gran",
                     price: 450,
-                    description: "Cantina Marilina / Sicilia, Italy"
+                    description: "Falcata / Valencia, Spain"
                 },
                 2: {
-                    name: "Falcata",
+                    name: "Cantina Marilina",
                     price: 550,
-                    description: "Pago Casa Gran / Valencia, Spain"
+                    description: "Currivu Bianco / Sicilia, Italy"
                 },
                 3: {
                     name: "Riesling Venture",
@@ -95,20 +115,15 @@ const menuList = {
                     price: 500,
                     description: "Schneider / Thermenregion, Austria"
                 },
-                5: {
-                    name: "Melon Fizz",
-                    price: 600,
-                    description: "джин, бузина, дыня, виноград"
-                },
             },
             name: "Белое",
         },
         red: {
             items: {
                 1: {
-                    name: "Piuma Primitivo",
+                    name: "Primitivo Salento",
                     price: 500,
-                    description: "Vini manduria / Puglia, Italyь"
+                    description: "Piuma / Puglia, Italy"
                 },
                 2: {
                     name: "Raisin de Loup",
@@ -137,7 +152,7 @@ const menuList = {
                 },
                 2: {
                     name: "Cremant",
-                    price: 650,
+                    price: 500,
                     description: "Andre Delorme / Bourgogne, France"
                 },
             },
@@ -149,15 +164,19 @@ const menuList = {
         vodka: {
             items: {
                 1: {
-                    name: "Tselovalnikъ",
-                    price: 290,
+                    name: "TselovalnikЪ",
+                    price: 350,
                 },
                 2: {
-                    name: "J.J. Whitley rtisanal Vodka",
-                    price: 190,
+                    name: "J.J. Whitley rtisanal",
+                    price: 200,
+                },
+                3: {
+                    name: "Tsarskaja Flavors",
+                    price: 200,
                 },
             },
-            name: "Водка",
+            name: "Водка 40 мл.",
         },
         tequila: {
             items: {
@@ -170,7 +189,16 @@ const menuList = {
                     price: 390,
                 },
             },
-            name: "Текила",
+            name: "Текила 40 мл.",
+        },
+        mezcal: {
+            items: {
+                1: {
+                    name: "Noble Coyote Espadin",
+                    price: 600,
+                },
+            },
+            name: "Мескаль 40 мл.",
         },
         gin: {
             items: {
@@ -179,60 +207,32 @@ const menuList = {
                     price: 250,
                 },
                 2: {
-                    name: "Roku Japanese Craft Gin",
-                    price: 490,
+                    name: "Barrister B47 Bartender’s Edition",
+                    price: 300,
                 },
                 3: {
                     name: "Malfy Rosa",
-                    price: 490,
+                    price: 500,
                 },
                 4: {
                     name: "Malfy Con Arancia",
-                    price: 490,
-                },
-                5: {
-                    name: "Sipsmith London Dry Gin",
-                    price: 590,
+                    price: 500,
                 },
             },
-            name: "Джин",
+            name: "Джин 40 мл.",
         },
         whisky: {
             items: {
                 1: {
-                    name: "Bakhall Sweet Mash Grain Whiskey",
-                    price: 390,
+                    name: "Bakhall Sweet Mash Grain",
+                    price: 400,
                 },
                 2: {
-                    name: "Makers Mark",
-                    price: 550,
-                },
-                3: {
-                    name: "Jim Beam Rye",
-                    price: 490,
-                },
-                4: {
                     name: "Samuel Gelston’s Pot Still",
-                    price: 390,
-                },
-                5: {
-                    name: "The Famous Grouse",
-                    price: 330,
-                },
-                6: {
-                    name: "Naked Mal",
-                    price: 590,
-                },
-                7: {
-                    name: "The Macallan Triple Cask 12 YO",
-                    price: 990,
-                },
-                8: {
-                    name: "Auchentoshan American OAK",
-                    price: 550,
+                    price: 400,
                 },
             },
-            name: "Виски",
+            name: "Виски 40 мл.",
         },
         rum: {
             items: {
@@ -245,117 +245,105 @@ const menuList = {
                     price: 350,
                 },
                 3: {
-                    name: "Brugal 1888",
-                    price: 650,
-                },
-                4: {
-                    name: "Arcane Extra Aroma 12 YO",
+                    name: "Arcane Extra Aroma 12YO",
                     price: 550,
                 },
             },
-            name: "Ром",
-        },
-        cognac: {
-            items: {
-                1: {
-                    name: "Courvoisier VS",
-                    price: 690,
-                },
-            },
-            name: "Коньяк",
+            name: "Ром 40 мл.",
         },
         bitters: {
             items: {
                 1: {
+                    name: "Campari",
+                    price: 500,
+                },
+                2: {
+                    name: "Aperol",
+                    price: 400,
+                },
+                3: {
                     name: "Fernet Branca",
                     price: 550,
                 },
-                2: {
-                    name: "Amaro Lucano",
-                    price: 490,
-                },
-                3: {
-                    name: "Amaro Montenegro",
-                    price: 490,
-                },
                 4: {
+                    name: "Ligare",
+                    price: 300,
+                },
+                5: {
+                    name: "Amaro Lucano",
+                    price: 450,
+                },
+                6: {
+                    name: "Amaro Ulrich",
+                    price: 500,
+                },
+                7: {
+                    name: "Amaro Montenegro",
+                    price: 550,
+                },
+                8: {
                     name: "Amaro Abano Dry",
                     price: 350,
                 },
+                9: {
+                    name: "Luxardo Bitter Bianco",
+                    price: 350,
+                },
+                10: {
+                    name: "Luxardo Fernet",
+                    price: 350,
+                },
+               
             },
-            name: "Ликёры",
+            name: "АМАРО | ГОРЕЧИ 40 мл.",
         },
         vermut: {
             items: {
                 1: {
-                    name: "Candela Cream",
-                    price: 490,
+                    name: "Lustau Macarena Manzanilla DO",
+                    price: 500,
                 },
                 2: {
+                    name: "Candela Cream",
+                    price: 500,
+                },
+                3: {
                     name: "Lustau Vina 25 Pedro Ximenez",
                     price: 550,
                 },
-                3: {
-                    name: "Cinzano Extra Dry",
-                    price: 330,
-                },
                 4: {
-                    name: "Cinzano Rosso",
-                    price: 330,
+                    name: "Dolin Dry",
+                    price: 500,
                 },
                 5: {
-                    name: "Cinzano Bianco",
-                    price: 330,
+                    name: "Dolin Rouge",
+                    price: 500,
                 },
                 6: {
-                    name: "Dolin Dry",
-                    price: 390,
+                    name: "Dolin Chamberyzette Fraise",
+                    price: 500,
                 },
                 7: {
-                    name: "Dolin Chamberyzette Fraise",
-                    price: 390,
+                    name: "Lustau La Ina Blanco",
+                    price: 500,
                 },
                 8: {
-                    name: "Lustau La Ina Blanco",
-                    price: 490,
+                    name: "Byrrh Grand Quinquina",
+                    price: 600,
                 },
             },
-            name: "Вермуты",
+            name: "ВЕРМУТЫ | КРЕПЛЕНЫЕ ВИНА 60мл.",
         },
     },
     beer: {
         beer: {
             items: {
                 1: {
-                    name: "Konix Munich Helles (лагер)",
+                    name: "Пиво",
                     price: 400,
                 },
                 2: {
-                    name: "Schneider Weisse Tap 7 (пшеничное)",
-                    price: 400,
-                },
-                3: {
-                    name: "Konix Overfall (ипа)",
-                    price: 400,
-                },
-                4: {
-                    name: "Konix Crazy Moose (апа)",
-                    price: 400,
-                },
-                5: {
-                    name: "Konix Ice cream plombeer (портер)",
-                    price: 400,
-                },
-                6: {
-                    name: "Konix Ma Chere Framboise (малиновое)",
-                    price: 400,
-                },
-                7: {
-                    name: "Konix Mary, go home (томатное)",
-                    price: 400,
-                },
-                8: {
-                    name: "Costa Verde Spanish dry cider (сидр)",
+                    name: "Сидр",
                     price: 400,
                 },
             },
@@ -364,158 +352,43 @@ const menuList = {
         withoutalcohol: {
             items: {
                 1: {
-                    name: "сезонный лимонад",
+                    name: "Лимонад",
                     price: 250,
                 },
                 2: {
-                    name: "дикий квас",
-                    price: 300,
+                    name: "Кофе",
+                    price: 250,
                 },
                 3: {
-                    name: "Hans Baer Riesling",
-                    price: 400,
-                },
-                4: {
                     name: "тоник",
                     price: 300,
                 },
             },
             name: "Безалкогольное"
+        },
+        withoutalcoholcocktails: {
+            items: {
+                1: {
+                    name: "Сансет Панч БА",
+                    price: 400,
+                },
+                2: {
+                    name: "Майнау БА",
+                    price: 400,
+                },
+            },
+            name: "Безалкогольные коктейли"
+        },
+        withoutalcoholwine: {
+            items: {
+                1: {
+                    name: "Hans Baer Riesling",
+                    price: 400,
+                },
+            },
+            name: "Безалкогольное вино"
         }
     },
-    bottles: {
-        white: {
-            items: {
-                1: {
-                    name: "Riesling Qvinterra (Riesling) Kuhling Gillot / Rheinhessen, Germany", //white
-                    price: 4900,
-                    description: "«Точно понравится! Тонкое, свежее, минеральное. Чуть солоноватое и по-женски мягкое»"
-                },
-                2: {
-                    name: "Chablis (Chardonnay) Domaine Oudin / Burgundy, France",
-                    price: 6800,
-                    description: "«Округлое, сливочное, травянистое, на желтых фруктах, слегка пряное. Белое среднетелое вино от двух сестер»"
-                },
-                3: {
-                    name: "Sancerre (Sauvignon Blanc) Claude Riffault Les Boucauds / Loire, France",
-                    price: 8500,
-                    description: "«Молодой винодел, ручной сбор урожая! С фруктово-цитрусовыми акцентами и пикантной кислинкой в сдержанном послевкусии»"
-                },
-                4: {
-                    name: "Les Argiles (Chenin Blanc) Francois Chidaine / Loire, France",
-                    price: 9000,
-                    description: "«Персики и ваниль! Слегка пороховой и аристократичный. Золото в бокале, не иначе!»"
-
-                },
-                5: {
-                    name: "Chardonnay (Chardonnay) Fanny Sabre / Burgundy, France",
-                    price: 10000,
-                    description: "«От женщины-винодела. Тонко, элегантно и изящно. Произведено традиционным методом бургундского виноделия»"
-                },
-            },
-            name: "Белые"
-        },
-        red: {
-            items: {
-                1: {
-                    name: "Clima (Local) Vale da Capucha / Lisboa, Portugal", // red
-                    price: 4500,
-                    description: "«Пряное и мягкое, с легким землистым мотивом. Специи, джем, клубника и полное наслаждение!»"
-                },
-                2: {
-                    name: "Ginestreto Rosso (Merlot, Sangiovese) Poggiosecco / Toscana, Italy",
-                    price: 4500,
-                    description: "«Чистое и ясное, с нотками чернослива и острой лакрицы. Мягкие танины, длинные на вкус, в конце сухие»"
-                },
-                3: {
-                    name: "TN Tinto Natural (Tempranillo, Sumoll, Bobal) Partida Creus / Penedes, Spain",
-                    price: 6000,
-                    description: "«Пара бывших архитекторов создает натуральное вино по принципу невмешательства. Чудное вино для любителей диких деревенских ноток»"
-                },
-                4: {
-                    name: "Le Fioraie (Sangiovese, Colorino, Canaiolo) Chianti Clasico / Toscana, Italy",
-                    price: 6000,
-                    description: "«Интересно! Ноты фиалки, спелой вишни, гвоздики и молотого кофе. Идеально в паре с нашим паштетом!»"
-                },
-                5: {
-                    name: "Le Marmot (Merlot, Cabernet Franc, Cabernet Sauvignon) Chateau La Brande / Bordeaux, France",
-                    price: 6900,
-                    description: "«Насыщенное, медитативное с округлым шелковистым вкусом. В аромате подлесок, ежевика и смородина»"
-                },
-                6: {
-                    name: "DD Arbois (Poulsard, Trousseau, Pinot Noir) Benedicte & Stephane Tissot / Jura, France",
-                    price: 9000,
-                    description: "«Живое и натуральное вино. Каждая бутылка — индивидуальна. Вино с любовью и страстью от мужа и жены Тиссо!»"
-                },
-                7: {
-                    name: "Pommard (Pinot Noir) Fanny Sabre / Burgundy, France",
-                    price: 14000,
-                    description: "«От женщины-винодела! Малина, вишня, черный перец. Традиция в одном бокале с современностью. You`d better try it!»"
-                },
-            },
-            name: "Красные"
-        },
-        pentats: {
-            items: {
-                1: {
-                    name: "PetNat Frizzy POP (Pinot Nero, Pinot bianco, Durellа) L`Armonia / Veneto, Italy", //pentats
-                    price: 5000,
-                    description: "«Диковато! Своеобразно! Дрожжевые нотки, грейпфрут с цитрусами, мармелад и сушеные ягоды. Блеск и веселое послевкусие!»"
-                },
-                2: {
-                    name: "Upupa Epops (Sangiovese, Colorino, Canaiolo) Clos Fremur / Loire, France",
-                    price: 5500,
-                    description: "«Очень вкусно, правда! Джем с клубникой и пончики! Антони Робэн не производит вино, а сопровождает виноград от лозы до ваших губ!»"
-                },
-            },
-            name: "Пентаты"
-        },
-        rose: {
-            items: {
-                1: {
-                    name: "Rose Touraine (Grolleau, Pinot Noir, Gamay) Francois Chidaine / Loire, France", //pink
-                    price: 4500,
-                    description: "«Энергичное, но мягкое! Колоритное и сливочное. Ноты свежей груши, крыжовника и клубники. Тонкая минеральность и шелковистая текстура. (Гролло, Пино нуар, Гаме)»"
-                },
-            },
-            name: "Розовое"
-        },
-        bubles: {
-            items: {
-                16: {
-                    name: "Cava L'Atzar (Macabeo, Xarel-lo, Pinot Noir) Moli Dels Capellans / Catalunya, Spain", //bubles
-                    price: 4000,
-                    description: "«Изящная биодинамика от двух друзей из Испании. Пьем и улыбаемся хорошей компании»"
-                },
-                17: {
-                    name: "Bubbly Rose Cremant (Merlot) Monicord / Bordeaux, France",
-                    price: 5000,
-                    description: "«Легкий аромат дикой клубники и белого персика. Вся семья участвует в производстве. Родители — вино. Дочь — этикетки»"
-                },
-                18: {
-                    name: "Cremant de Bourgogne (Chardonnay, Pinot Noir) Rene Lamy / Bourgogne, France",
-                    price: 5500,
-                    description: "«Нежность сливочного масла и стойкое послевкусие. Французский классический белый креман сухого сорта. Отлично в сочетании со страчателлой!»"
-                },
-                19: {
-                    name: "Cremant (Chardonnay, Pinot Noir) Benedicte et Stephane Tissot / Jura, France",
-                    price: 7000,
-                    description: "«Крутая бутылка из региона Жюра. Тонкое, булочное с таинственной кислотностью. Даже напоминает шампанское»"
-                },
-                20: {
-                    name: "Cuvée Tradition (Chardonnay, Pinot Noir, Meunier) M. Hostomme / Champagne, France", //pentats
-                    price: 9000,
-                    description: "«Дорого, сложно, вкусно! Шампанское с кремовой текстурой и нотками персика, ореха и кондитерских изделий»"
-                },
-                21: {
-                    name: "Metisse Noirs & Blancs (Pinot Noir, Pinot Blanc) Olivier Horiot / Champagne, France",
-                    price: 14000,
-                    description: "«Легкий аромат дикой клубники и белого персика. Вся семья участвует в производстве. Родители — вино. Дочь — этикетки»"
-                },
-            },
-            name: "Пузыри",
-        },
-    }
 }
 
 export default menuList;
