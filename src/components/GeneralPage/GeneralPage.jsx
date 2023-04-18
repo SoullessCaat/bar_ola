@@ -41,7 +41,7 @@ const GeneralPage = () => {
           {viewBookPopup && (
             <Popup
               handleViewBookPopup={handleViewBookPopup}
-              headerText="Как добраться"
+              headerText="Забронировать"
               descriptionText="Чтобы забронировать столик в OLA bar вы можете связаться с администратором:"
               place={false}
               handleViewPlacePopup={false}
