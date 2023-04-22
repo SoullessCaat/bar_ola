@@ -12,9 +12,8 @@
     scrollbar-width: none;
 }
 
-.menu-card:-webkit-scrollbar {
-    width: 0;
-    height: 0;
+.menu-card::-webkit-scrollbar {
+    display: none;
 } 
 
 .card {

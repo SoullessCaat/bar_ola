@@ -2,9 +2,9 @@ import React from "react";
 import "./EventCard.css";
 import rectangle from "../../logo/rectangle.svg"
 
-const EventCard = ({ photo, date, time, describe }) => {
+const EventCard = ({ photo, date, time, describe, main }) => {
   return (
-  <div className="event-card">
+  <div className="event-card" id={main ? "main" : "usual"}>
         <img src={photo} width={250} height={227} alt=""></img>
         <div className="event-card-description">
             <div className="event-card-description-header">

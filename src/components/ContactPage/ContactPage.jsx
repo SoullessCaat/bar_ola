@@ -52,7 +52,7 @@ const ContactPage = () => {
        <div className="contact-information">
          <div className="contacts-wrapper">
           <div className="contacts-first">
-            <div className="contacts-header">Contacts</div>
+            <div className="contacts-header">Контакты</div>
             <div>
               <img
                 src={Pin_alt}
@@ -113,7 +113,7 @@ const ContactPage = () => {
         </div>
         <div className="contacts-wrapper">
           <div className="contacts-two">
-            <div className="contacts-header">Working Hours</div>
+            <div className="contacts-header">Режим работы</div>
             <div>
               <span className="days">Ср-Чт:&nbsp;</span>18:00 - 01:00
             </div>

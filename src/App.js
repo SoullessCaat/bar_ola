@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import AboutBarPage from './components/AboutBarPage/AboutBarPage';
 import ContactPage from './components/ContactPage';

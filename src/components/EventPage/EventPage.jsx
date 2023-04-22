@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./EventPage.css";
 import EventCard from "../EventCard";
 import rightArrow from "../../logo/rightArrow.svg";
@@ -6,6 +6,24 @@ import leftArrow from "../../logo/leftArrow.svg";
 import { events } from "../../data/events";
 
 const EventPage = () => {
+  useEffect(() => {
+    const eventsMain = document.getElementById("main");
+    console.log(eventsMain.offsetLeft)
+    const cards = document.querySelector(".event-cards-wrapper");
+    const posit = eventsMain.getBoundingClientRect()
+    console.log(eventsMain.getBoundingClientRect())
+    cards.scrollTo({
+      left: posit.left - 625
+    });
+    // eventsMain.scrollIntoView({
+    //   block: "start",
+    //   inline: "center",
+    //   behavior: "smooth",
+    // });
+  }, [])
+  
+
+
   const handleScroll = (dir) => {
     const cards = document.querySelector(".event-cards-wrapper");
     if (dir === "right") {
@@ -35,6 +53,7 @@ const EventPage = () => {
                   time={item.time}
                   describe={item.describe}
                   key={item.date}
+                  main={item.main}
                 />
               );
             })}

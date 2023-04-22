@@ -5,8 +5,6 @@ import rightArrow from "../../logo/arrowRightMenu.svg";
 import leftArrow from "../../logo/arrowLeftMenu.svg";
 
 const MenuPage = () => {
-  // Нужно следить за скролом карточек. Каждая карточка 
-
   const handleScroll = (dir) => {
     const cards = document.querySelector(".menu-cards");
     if (dir === "right") {
