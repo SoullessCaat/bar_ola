@@ -7,19 +7,12 @@ import { events } from "../../data/events";
 
 const EventPage = () => {
   useEffect(() => {
-    const eventsMain = document.getElementById("main");
-    console.log(eventsMain.offsetLeft)
     const cards = document.querySelector(".event-cards-wrapper");
-    const posit = eventsMain.getBoundingClientRect()
-    console.log(eventsMain.getBoundingClientRect())
-    cards.scrollTo({
-      left: posit.left - 625
-    });
-    // eventsMain.scrollIntoView({
-    //   block: "start",
-    //   inline: "center",
-    //   behavior: "smooth",
-    // });
+    const eventsMain = document.getElementById("main");
+    const navItemsRect = cards.getBoundingClientRect();
+    const navItemActiveRect = eventsMain.getBoundingClientRect();
+    const navItemsLeft = navItemActiveRect.left - navItemsRect.left + (navItemActiveRect.width - navItemsRect.width) / 2;
+    cards.scrollTo({left: navItemsLeft});
   }, [])
   
 
