@@ -369,11 +369,11 @@ const menuList = {
         withoutalcoholcocktails: {
             items: {
                 1: {
-                    name: "Сансет Панч БА",
+                    name: "Сансет Панч Б/А",
                     price: 400,
                 },
                 2: {
-                    name: "Майнау БА",
+                    name: "Майнау Б/А",
                     price: 400,
                 },
             },

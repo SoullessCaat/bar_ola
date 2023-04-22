@@ -56,7 +56,7 @@ export const events = {
     photo: eventSix,
     date: "25 Апреля, 2023",
     time: "19:00",
-    describe: "Михаил Кузьмин и Артур Ватутин",
+    describe: "Михаил Кузьмин  и Артур Ватутин",
   },
   9: {
     photo: eventFive,
