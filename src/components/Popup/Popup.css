@@ -17,7 +17,12 @@
   box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.53);
   overflow: scroll;
 }
-
+.popup-book-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.popup-place-wrapper::-webkit-scrollbar {
+  display: none;
+}
 .popup-place-wrapper {
   z-index: 99999;
   max-width: 508px;
