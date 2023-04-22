@@ -34,6 +34,7 @@ const EventPage = () => {
                   date={item.date}
                   time={item.time}
                   describe={item.describe}
+                  key={item.date}
                 />
               );
             })}

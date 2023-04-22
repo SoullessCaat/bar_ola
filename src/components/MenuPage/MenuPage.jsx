@@ -46,7 +46,7 @@ const MenuPage = () => {
           </div>
         </div>
         <div className="menu-cards">
-          <MenuCard position="kitchen"/>
+          <MenuCard position="kitchen" />
           <MenuCard position="cocktails" />
           <MenuCard position="wine" />
           <MenuCard position="hard" />

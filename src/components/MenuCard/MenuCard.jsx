@@ -7,7 +7,7 @@ const MenuCard = ({ position }) => {
   const renderPositions = (menu) => {
     return Object.values(menu).map((item) => {
       return (
-        <div className="card">
+        <div className="card" key={item.name}> 
           <div className="menu-name-wrapper">
             <div className="menu-name">{item.name}</div>{" "}
             <div className="menu-description">{item.description}</div>{" "}
@@ -21,14 +21,14 @@ const MenuCard = ({ position }) => {
     });
   };
 
-  const renderSubPositions = (menu, position) => {
+  const renderSubPositions = (menu) => {
     return Object.values(menu).map((item) => {
       return (
-        <div className="card sub">
+        <div className="card sub" key={item.name}>
           <div className="menu-name-submenu">{item.name && item.name}</div>
           {Object.values(item.items).map((posit) => {
             return (
-              <div className="wrapper-submenu">
+              <div className="wrapper-submenu" key={posit.name}>
                 <div className="menu-name-wrapper">
                   <div className="menu-name">{posit.name}</div>{" "}
                   <div className="menu-description">{posit?.description}</div>{" "}
@@ -47,9 +47,9 @@ const MenuCard = ({ position }) => {
 
   const renderContent = () => {
     if (position === "wine" || position === "hard" || position === "beer") {
-      return renderSubPositions(menuList[position], position);
+      return renderSubPositions(menuList[position]);
     }
-    return renderPositions(menuList[position], position);
+    return renderPositions(menuList[position]);
   };
 
   const renderName = (position) => {

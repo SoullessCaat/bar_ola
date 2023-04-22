@@ -82,13 +82,13 @@
     display: none;
   }
   .about-about {
-    max-width: 290px;
     max-height: 832px;
     height: auto;
   }
   .about-photo-mobil {
     display: flex;
-    margin: 0 -30px;
+    width: 100%;
+    justify-content: center;
   }
   .page-descriptions-text {
     font-size: 12px;
