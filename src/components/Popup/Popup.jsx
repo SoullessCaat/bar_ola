@@ -3,8 +3,8 @@ import "./Popup.css";
 import whatsappPopup from "../../logo/whatsappPopup.png";
 import telegramPopup from "../../logo/telegramPopup.png";
 import Dell_duotone from "../../logo/Dell_duotone.png";
-import popupFirst from "../../photo/popupFirst.png"
 import popupSecond from "../../photo/popupSecond.png";
+import popupFirst from "../../photo/popupFirst.png"
 
 
 const Popup = ({ handleViewBookPopup, headerText, descriptionText, place, handleViewPlacePopup }) => {
