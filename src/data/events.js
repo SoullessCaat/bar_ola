@@ -50,7 +50,6 @@ export const events = {
     date: "23 Апреля, 2023",
     time: "19:00",
     describe: "Zodiac",
-    main: true
   },
   8: {
     photo: eventSix,
@@ -63,5 +62,6 @@ export const events = {
     date: "27 Апреля, 2023",
     time: "20:00",
     describe: "Илья Бунин",
+    main: true
   },
 };
