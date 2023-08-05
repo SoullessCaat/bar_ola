@@ -42,7 +42,7 @@ export class Api {
   };
 
   getDirectoryContent = (path) => {
-    let route = "resources?public_key=https%3A%2F%2Fdisk.yandex.ru%2Fd%2FrT0Jl4XIx8ReWg";
+    let route = "resources?public_key=https://disk.yandex.ru/d/QyTEumnT5bQTCg";
     return this.clientWrapper("get", route+(path?`&path=${path}`:''));
   };
 }

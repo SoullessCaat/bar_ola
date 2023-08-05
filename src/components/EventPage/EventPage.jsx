@@ -11,14 +11,23 @@ const EventPage = () => {
   const { getRootDirectoryData, processedData } = yaDiskStore;
 
   useEffect(() => {
-    const cards = document.querySelector(".event-cards-wrapper");
-    const eventsMain = document.getElementById("main");
-    // const navItemsRect = cards.getBoundingClientRect();
-    // const navItemActiveRect = eventsMain.getBoundingClientRect();
-    // const navItemsLeft = navItemActiveRect.left - navItemsRect.left + (navItemActiveRect.width - navItemsRect.width) / 2;
-    // cards.scrollTo({left: navItemsLeft});
     getRootDirectoryData();
   }, []);
+
+  useEffect(() => {
+    scrollToMainCard();
+  }, [processedData]);
+
+
+  const scrollToMainCard = ()=>{
+    const cards = document.querySelector(".event-cards-wrapper");
+    const eventsMain = document.getElementById("main");
+    if(!cards) return;
+    const navItemsRect = cards.getBoundingClientRect();
+    const navItemActiveRect = eventsMain.getBoundingClientRect();
+    const navItemsLeft = navItemActiveRect.left - navItemsRect.left + (navItemActiveRect.width - navItemsRect.width) / 2;
+    cards.scrollTo({left: navItemsLeft});
+  }
 
   const handleScroll = (dir) => {
     const cards = document.querySelector(".event-cards-wrapper");
@@ -49,6 +58,7 @@ const EventPage = () => {
                       photo={item.image}
                       datetime={item.text.datetime}
                       description={item.text.description}
+                      main={item.main}
                     />
                   );
                 })}

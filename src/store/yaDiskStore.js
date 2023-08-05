@@ -11,10 +11,27 @@ class StateStore {
   }
 
   processedData = [];
-  
+
   pushProcessedData = (proccesedData) => {
-    console.log("proccesed", proccesedData);
+    if (this.processedData.find((e) => e.resourceId === proccesedData.resourceId))
+      return;
+
     this.processedData.push(proccesedData);
+    this.processedData.sort(function (dateFirst, dateSecond) {
+      return dateFirst.text.datetime - dateSecond.text.datetime;
+    });
+
+    let currentDate = new Date();
+    let isMain = false
+    this.processedData.forEach(event => {
+      event.main = false;
+      if(isMain) return;
+
+      if(event.text.datetime - currentDate >=0){
+        event.main = true;
+        isMain = true;
+      }
+    });
   };
 
   getRootDirectoryData = () => {
@@ -52,22 +69,26 @@ class StateStore {
   converToProcessedData = (items, resourceId) => {
     if (this.processedData.find((e) => e.resourceId === resourceId)) return;
     if (items.length !== 2) return;
-  
+
     // image and textfile
     if (!items.find((e) => e.mediaType === "image")) return;
     if (!items.find((e) => e.mimeType === "text/plain")) return;
 
     this.getTextData(items, (text) => {
+      text = text.trim("\n");
       let index = text.indexOf("\n");
+      let datetime = new Date(Date.parse(text.substring(0, index).trim()));
       let processedText = {
-        datetime: text.substring(0, index),
+        datetime: datetime,
         description: text.substring(index + 1, text.length).trim("\n"),
       };
-      this.pushProcessedData({
-        image: this.getImageLink(items),
-        resourceId: resourceId,
-        text: processedText
-      });
+
+      if (processedText.datetime !== "Invalid Date")
+        this.pushProcessedData({
+          image: this.getImageLink(items),
+          resourceId: resourceId,
+          text: processedText,
+        });
     });
   };
 
@@ -98,12 +119,6 @@ class StateStore {
       }
     };
   };
-
-  
-
-  
-
-  
 }
 
 export default StateStore;
