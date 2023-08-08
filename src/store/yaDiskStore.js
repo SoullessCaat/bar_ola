@@ -96,14 +96,14 @@ class StateStore {
     if (data[0].mediaType !== "image")
       return this.getImageLink([data[1], data[0]]);
 
-    return data[0].file;
+    return data[0].file.replace('https://', 'https://nginx-proxy-server.ru/proxy/');
   };
 
   getTextData = (data, callback) => {
     if (data[0].mimeType !== "text/plain")
       return this.getTextData([data[1], data[0]], callback);
 
-    this.requestToGetText(data[0].file, callback);
+    this.requestToGetText(data[0].file.replace('https://', 'https://nginx-proxy-server.ru/proxy/'), callback);
   };
 
   requestToGetText = (url, callback) => {
