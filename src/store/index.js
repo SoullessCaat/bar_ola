@@ -1,9 +1,9 @@
 import React from "react";
-import YaDiskStore from "./yaDiskStore";
+import EventsStore from "./eventsStore";
 
 class Store {
   constructor() {
-    this.yaDiskStore = new YaDiskStore(this);
+    this.eventsStore = new EventsStore(this);
   }
 }
 

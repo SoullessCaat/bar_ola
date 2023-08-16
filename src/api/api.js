@@ -4,7 +4,8 @@ import { camelizeKeys, decamelizeKeys, camelize } from "humps";
 export class Api {
   constructor() {
     this.client = axios.create();
-    this.client.defaults.baseURL = "https://nginx-proxy-server.ru/proxy/cloud-api.yandex.net/v1/disk/public";
+    this.client.defaults.baseURL = "https://nginx-proxy-server.ru/api";
+    // this.client.defaults.baseURL = "http://localhost:5153";
     this.client.timeout = 3000;
 
     this.client.interceptors.response.use((response) => {
@@ -40,9 +41,8 @@ export class Api {
     return clientResult;
   };
 
-  getDirectoryContent = (path) => {
-    let route = "resources?public_key=https://disk.yandex.ru/d/QyTEumnT5bQTCg&fields=&fields=_embedded.items.path,_embedded.items.type,_embedded.items.media_type,_embedded.items.mime_type,resource_id";
-    return this.clientWrapper("get", route+(path?`&path=${path}`:''));
+  getEvents = () => {
+    return this.clientWrapper("get", "/events");
   };
 }
 const api = new Api();

@@ -7,17 +7,16 @@ import { useStore } from "../../store";
 import { observer } from "mobx-react-lite";
 
 const EventPage = () => {
-  const { yaDiskStore } = useStore();
-  const { getRootDirectoryData, processedData } = yaDiskStore;
+  const { eventsStore } = useStore();
+  const { getEvents, events } = eventsStore;
 
   useEffect(() => {
-    getRootDirectoryData();
+    getEvents();
   }, []);
 
   useEffect(() => {
     scrollToMainCard();
-  }, [processedData]);
-
+  }, [events]);
 
   const scrollToMainCard = ()=>{
     const cards = document.querySelector(".event-cards-wrapper");
@@ -45,20 +44,21 @@ const EventPage = () => {
 
   return (
     <>
-      {processedData?.length > 0 ? (
+      {events?.length > 0 ? (
         <div className="event-wrapper" id="events">
           <div className="event-event">
             <div className="event-event-wrapper">
               <div className="pages-number">03</div>
               <div className="pages-description">события</div>
               <div className="event-cards-wrapper">
-                {processedData?.map((item) => {
+                {events?.map((item) => {
+                  console.log(item.eventDescription)
                   return (
                     <EventCard
-                      photo={item.image}
-                      datetime={item.text.datetime}
-                      description={item.text.description}
-                      main={item.main}
+                      imageUrl={item.imageUrl}
+                      stringifyEventDateTime={item.stringifyEventDateTime}
+                      eventDescription={item.eventDescription}
+                      isNextEvent={item.isNextEvent}
                     />
                   );
                 })}
