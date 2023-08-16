@@ -21,7 +21,7 @@ const EventPage = () => {
   const scrollToMainCard = ()=>{
     const cards = document.querySelector(".event-cards-wrapper");
     const eventsMain = document.getElementById("main");
-    if(!cards) return;
+    if(!cards || !eventsMain) return;
     const navItemsRect = cards.getBoundingClientRect();
     const navItemActiveRect = eventsMain.getBoundingClientRect();
     const navItemsLeft = navItemActiveRect.left - navItemsRect.left + (navItemActiveRect.width - navItemsRect.width) / 2;
