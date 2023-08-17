@@ -3,19 +3,30 @@ import "./EventPage.css";
 import EventCard from "../EventCard";
 import rightArrow from "../../logo/rightArrow.svg";
 import leftArrow from "../../logo/leftArrow.svg";
-import { events } from "../../data/events";
+import { useStore } from "../../store";
+import { observer } from "mobx-react-lite";
 
 const EventPage = () => {
+  const { eventsStore } = useStore();
+  const { getEvents, events } = eventsStore;
+
   useEffect(() => {
+    getEvents();
+  }, []);
+
+  useEffect(() => {
+    scrollToMainCard();
+  }, [events]);
+
+  const scrollToMainCard = ()=>{
     const cards = document.querySelector(".event-cards-wrapper");
     const eventsMain = document.getElementById("main");
+    if(!cards || !eventsMain) return;
     const navItemsRect = cards.getBoundingClientRect();
     const navItemActiveRect = eventsMain.getBoundingClientRect();
     const navItemsLeft = navItemActiveRect.left - navItemsRect.left + (navItemActiveRect.width - navItemsRect.width) / 2;
     cards.scrollTo({left: navItemsLeft});
-  }, [])
-  
-
+  }
 
   const handleScroll = (dir) => {
     const cards = document.querySelector(".event-cards-wrapper");
@@ -32,45 +43,48 @@ const EventPage = () => {
   };
 
   return (
-    <div className="event-wrapper" id="events">
-      <div className="event-event">
-        <div className="event-event-wrapper">
-          <div className="pages-number">03</div>
-          <div className="pages-description">события</div>
-          <div className="event-cards-wrapper">
-            {Object.values(events).map((item) => {
-              return (
-                <EventCard
-                  photo={item.photo}
-                  date={item.date}
-                  time={item.time}
-                  describe={item.describe}
-                  key={item.date}
-                  main={item.main}
-                />
-              );
-            })}
-          </div>
-          {
-            <div className="events-arrows">
-              <div
-                className="events-arrow-left"
-                onClick={() => handleScroll("left")}
-              >
-                <img src={leftArrow} alt=""></img>
+    <>
+      {events?.length > 0 ? (
+        <div className="event-wrapper" id="events">
+          <div className="event-event">
+            <div className="event-event-wrapper">
+              <div className="pages-number">03</div>
+              <div className="pages-description">события</div>
+              <div className="event-cards-wrapper">
+                {events?.map((item) => {
+                  console.log(item.eventDescription)
+                  return (
+                    <EventCard
+                      imageUrl={item.imageUrl}
+                      stringifyEventDateTime={item.stringifyEventDateTime}
+                      eventDescription={item.eventDescription}
+                      isNextEvent={item.isNextEvent}
+                    />
+                  );
+                })}
               </div>
-              <div
-                className="events-arrow-right"
-                onClick={() => handleScroll("right")}
-              >
-                <img src={rightArrow} alt=""></img>
-              </div>
+              {
+                <div className="events-arrows">
+                  <div
+                    className="events-arrow-left"
+                    onClick={() => handleScroll("left")}
+                  >
+                    <img src={leftArrow} alt=""></img>
+                  </div>
+                  <div
+                    className="events-arrow-right"
+                    onClick={() => handleScroll("right")}
+                  >
+                    <img src={rightArrow} alt=""></img>
+                  </div>
+                </div>
+              }
             </div>
-          }
+          </div>
         </div>
-      </div>
-    </div>
+      ) : null}
+    </>
   );
 };
 
-export default EventPage;
+export default observer(EventPage);
