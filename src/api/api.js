@@ -4,7 +4,7 @@ import { camelizeKeys, decamelizeKeys, camelize } from "humps";
 export class Api {
   constructor() {
     this.client = axios.create();
-    this.client.defaults.baseURL = "https://nginx-proxy-server.ru/api";
+    this.client.defaults.baseURL = "https://server.olabar.ru/api";
     // this.client.defaults.baseURL = "http://localhost:5153";
     this.client.timeout = 3000;
 

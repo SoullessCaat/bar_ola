@@ -5,7 +5,7 @@ const EventCard = ({ imageUrl, stringifyEventDateTime, eventDescription, isNextE
   
   return (
     <div className="event-card" id={isNextEvent ? "main" : "usual"}>
-      <img src={imageUrl} width={250} height={227} alt=""></img>
+      <img src={imageUrl?.replace("nginx-proxy-server","server.olabar")} width={250} height={227} alt=""></img>
       <div className="event-card-description">
         <div className="event-card-description-header">
           <span>{stringifyEventDateTime}</span>
